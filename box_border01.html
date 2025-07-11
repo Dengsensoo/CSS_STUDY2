@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box 테두리 만들기</title>
+    <style>
+        div {
+            width: 400px;
+            height: 300px;
+            text-align: center;
+            font-size: 30px;
+            border-width: 20px 15px 10px 5px; /* 4개의 값을 넣을 수 있는데, Top, Right, Bottum, Left 등 시계 방향의 순서로 값 적용 가능. */
+            margin: 20px; /* 테두리 바깥 여백. 서로 다른 마진 끼리는 20px 그대로 겹쳐 들어감. */
+            padding: 50px; /* 컨텐츠와 테두리 사이의 여백 */
+            line-height: 270px; /* 글의 세로 컨텐츠 크기 */
+            border-top-color: red;
+            border-right-color: blue;
+        }
+        .box1 {
+            border-style: solid;
+        }
+        .box2 {
+            border-style: dotted;
+        }
+        .box3 {
+            border-style: dashed;
+        }
+        .box4 {
+            border: 3px solid rosybrown;
+            /* border-radius: 50%; 원모양 */
+            /* border-radius: 50px; */
+            border-top-left-radius: 50px; /* 해당 px 값은 각 꼭짓점에 있는 원의 반지름 값.*/
+            border-bottom-left-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">박스 1번</div>
+    <div class="box2">박스 2번</div>
+    <div class="box3">박스 3번</div>
+    <div class="box4">박스 4번</div>
+</body>
+</html>
